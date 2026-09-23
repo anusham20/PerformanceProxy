@@ -1,6 +1,6 @@
 # High-Performance HTTP Proxy with Adaptive Caching
 
-A systems-focused project designed to demonstrate cache design, concurrency, and performance engineering in a polished, interview-ready format.
+A systems-focused project designed to demonstrate cache design, concurrency, and performance engineering in a polished format.
 
 ## Project Description
 
