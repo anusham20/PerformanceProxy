@@ -36,17 +36,6 @@ flowchart TD
     L --> M[Plot comparison results]
 ```
 
-## Why this project stands out
-
-This project is especially strong for resume use because it demonstrates:
-
-- systems design and low-level performance reasoning
-- concurrency and thread-safe engineering
-- cache policy tradeoff analysis
-- benchmarking and empirical validation
-- data-driven decision making under different workload conditions
-
-It combines the spirit of a 15-213-style systems assignment with a cleaner and more portfolio-ready framing, making it suitable for candidates applying to big companies in systems, cloud, or performance engineering.
 
 ## Repository structure
 
