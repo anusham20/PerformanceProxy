@@ -100,17 +100,3 @@ This generates a comparison between LRU and LFU policies under different synthet
 ```bash
 python -m performance_proxy.load_test
 ```
-
-## Resume-ready project summary
-
-- Built a multithreaded HTTP proxy and caching system to evaluate request serving behavior, eviction strategies, and performance trade-offs under synthetic workloads.
-- Implemented LRU and LFU cache policies and benchmarked hit rate, throughput, and latency across temporal, hot-set, and randomized access patterns.
-- Designed workload-driven evaluation tooling and plotting to compare cache effectiveness and justify performance-oriented design decisions.
-
-## GitHub-ready project blurb
-
-High-Performance HTTP Proxy with Adaptive Caching — a systems-focused project centered on cache policy design, concurrency, and performance benchmarking. Built to evaluate LRU vs. LFU trade-offs, simulate parallel request workloads, and quantify throughput and hit-rate improvements under different access patterns.
-
-## Notes
-
-This project is intentionally built as a strong systems-engineering portfolio piece rather than a direct replica of a classroom assignment. It is relevant for candidates pursuing performance, infrastructure, backend, or cloud-focused engineering roles.
