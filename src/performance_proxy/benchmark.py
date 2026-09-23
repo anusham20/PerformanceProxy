@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 from .cache import build_workload_sequence, evaluate_policy
@@ -23,6 +24,10 @@ def run_policy_comparison(max_size: int = 32) -> list[dict]:
                 "hits": hits,
                 "misses": misses,
             })
+
+    output_path = Path("results") / "cache_policy_comparison.json"
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(json.dumps(results, indent=2), encoding="utf-8")
     return results
 
 
@@ -32,8 +37,8 @@ def write_policy_plot(results: list[dict], output_path: str | Path = "results/ca
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
 
-    output = Path(output_path)
-    output.parent.mkdir(parents=True, exist_ok=True)
+    out_path = Path(output_path)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
 
     scenarios = sorted({x["scenario"] for x in results})
     policies = ["lru", "lfu"]
@@ -51,9 +56,9 @@ def write_policy_plot(results: list[dict], output_path: str | Path = "results/ca
     ax.set_ylabel("Hit Rate")
     ax.legend()
     fig.tight_layout()
-    fig.savefig(output)
+    fig.savefig(out_path)
     plt.close(fig)
-    return output
+    return out_path
 
 
 if __name__ == "__main__":

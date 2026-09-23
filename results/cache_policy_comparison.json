@@ -1,0 +1,44 @@
+[
+  {
+    "scenario": "temporal",
+    "policy": "lru",
+    "hit_rate": 0.96,
+    "hits": 192,
+    "misses": 8
+  },
+  {
+    "scenario": "temporal",
+    "policy": "lfu",
+    "hit_rate": 0.96,
+    "hits": 192,
+    "misses": 8
+  },
+  {
+    "scenario": "hotset",
+    "policy": "lru",
+    "hit_rate": 0.9549,
+    "hits": 254,
+    "misses": 12
+  },
+  {
+    "scenario": "hotset",
+    "policy": "lfu",
+    "hit_rate": 0.9549,
+    "hits": 254,
+    "misses": 12
+  },
+  {
+    "scenario": "random",
+    "policy": "lru",
+    "hit_rate": 0.9,
+    "hits": 180,
+    "misses": 20
+  },
+  {
+    "scenario": "random",
+    "policy": "lfu",
+    "hit_rate": 0.9,
+    "hits": 180,
+    "misses": 20
+  }
+]
